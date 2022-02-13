@@ -1,16 +1,10 @@
-# This is a sample Python script.
+url_original = "https://bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidade=100"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+url = "bytebank.com/cambio?moedaOrigem=real"
+print(url)
 
+url_base = url[0:19]
+print(url_base)  # Vai imprimir “bytebank.com/cambio”
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+url_parametros = url[20:36]
+print(url_parametros)
